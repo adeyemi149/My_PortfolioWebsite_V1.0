@@ -1,0 +1,19 @@
+html,
+body {
+  background: #08080a;
+  font-family: "Inter", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0.8vw;
+  height: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  background: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 100vw;
+  background: grey;
+}
