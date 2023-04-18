@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Box,
   LinkBox,
@@ -11,12 +12,11 @@ import {
   Wrap,
 } from "@chakra-ui/react";
 import { Global } from "@emotion/react";
-import { useState } from "react";
 import { useRouter } from "next/router";
 import NextLink from "next/link";
 import { FiExternalLink, FiMoreVertical, FiGithub } from "react-icons/fi";
 import { motion } from "framer-motion";
-import { buttonVariant } from "../../src/Variant";
+import { buttonVariant } from "../../Variant";
 
 export const PortfolioGridItem = ({
   id,
@@ -99,8 +99,10 @@ export const PortfolioGridItem = ({
           color="rgba(255, 255, 255, 0.5)"
           fontSize="12px"
         >
-          {skills?.map((skill) => (
-            <Text pr={4}>{skill}</Text>
+          {skills?.map((skill, index) => (
+            <Text key={index} pr={4}>
+              {skill}
+            </Text>
           ))}
         </Wrap>
         <Flex justifyContent="flex-end" gap={2}>

@@ -27,7 +27,7 @@ const NotFoundPage = () => {
 			</NextLink>
 			</Box>
 			<Center>
-			<Heading mt={4} as="h1" color={color}>Error, Page doesn't exist!</Heading>
+			<Heading mt={4} as="h1" color={color}>Error, Page doesn&#39;t exist!</Heading>
 			</Center>
 	  </Layout>
   )

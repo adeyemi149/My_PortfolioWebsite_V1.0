@@ -63,7 +63,7 @@ const Contact = () => {
           maxW="550px"
         >
           My inbox is always open. Whether you have a question, Job opening or
-          just want to say hi, i'll try my very best to get back to you!
+          just want to say hi, i&#39;ll try my very best to get back to you!
         </Text>
         <Grid
           templateColumns={{

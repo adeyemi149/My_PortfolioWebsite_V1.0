@@ -116,8 +116,8 @@ export const ArchivedProjectItem = ({
         {summary}
       </Text>
       <Wrap pt={4} fontSize="12px" color="rgba(255, 255, 255, 0.5)">
-        {stacks?.map((stack) => (
-          <Text>{stack}</Text>
+        {stacks?.map((stack, index) => (
+          <Text key={index}>{stack}</Text>
         ))}
       </Wrap>
     </Box>

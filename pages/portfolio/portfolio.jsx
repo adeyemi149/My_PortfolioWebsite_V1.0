@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Button, Flex, Heading, SimpleGrid } from "@chakra-ui/react";
-import { PortfolioGridItem } from "@/pages/portfolio/portfolioGridItem";
+import { PortfolioGridItem } from "@/src/components/portfolioGridItem/portfolioGridItem";
 import {
   VmwareURL,
   TeslaCloneURL,
