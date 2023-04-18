@@ -14,7 +14,7 @@ export const teslaMenu = require("../public/assests/images/tesla_menu.webp");
 
 export const LinkedInPageOne = require("../public/assests/images/LinkedIn_page.webp");
 
-export const LinkedInHome = require("../public/assests/images/LinkedIn-Clone.webp");
+//export const LinkedInHome = require("../public/assests/images/LinkedIn-Clone.webp");
 
 export const disneyHomePage = require("../public/assests/images/Disney-Clone-mockup.webp");
 

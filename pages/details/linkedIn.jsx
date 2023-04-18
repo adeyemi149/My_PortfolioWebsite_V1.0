@@ -4,7 +4,7 @@ import { Box, List, ListItem, Link, Text, SimpleGrid } from "@chakra-ui/react";
 import Meta from "@/src/components/meta/meta";
 import { LinkIcon } from "@chakra-ui/icons";
 import WorkGridItem from "@/src/components/workGridItem/WorkGridItem";
-import { LinkedInHome, LinkedInPageOne } from "../../public/images";
+import { LinkedInPageOne } from "../../public/images";
 
 const LinkedIn = () => {
   return (
@@ -40,10 +40,6 @@ const LinkedIn = () => {
           </ListItem>
         </List>
         <SimpleGrid mt={4} columns={[1, 1, 2]} gap={6}>
-          <WorkGridItem
-            thumbnail={LinkedInHome.default.src}
-            title="LinkedIn_Page"
-          />
           <WorkGridItem
             thumbnail={LinkedInPageOne.default.src}
             title="LinkedIn_PageOne"
