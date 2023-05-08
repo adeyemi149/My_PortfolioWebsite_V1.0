@@ -31,7 +31,7 @@ export const ArchivedProject = () => {
         <ArchivedProjectItem
           projectName="Todo App"
           summary="Built an efficient todo app with add, check, delete, edit functions and motivational quotes API."
-          stacks={["React", "Css", "Javascript", "Quotable API"]}
+          stacks={["React", "Css", "Typescript", "Quotable API"]}
           gitHubURL="https://github.com/adeyemi149/React-todo-app"
           URL="https://web-app-todo.netlify.app/"
         />

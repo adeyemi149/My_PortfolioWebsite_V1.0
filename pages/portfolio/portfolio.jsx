@@ -52,7 +52,7 @@ const Portfolio = () => {
             toPage="/details/tesla"
             url="https://clone-tesla-site.netlify.app/"
             github="https://github.com/adeyemi149/tesla-clone-website"
-            skills={["React", "Redux", "Styled component"]}
+            skills={["React", "Typescript", "Redux", "Styled component"]}
             about="I created a website modelled after Tesla's design and branding that utilizes latest technologies such as Redux for efficient state management and Styled Components for dynamic CSS styling"
           />
           <PortfolioGridItem

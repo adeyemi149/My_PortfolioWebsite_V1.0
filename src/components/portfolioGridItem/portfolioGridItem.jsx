@@ -70,7 +70,7 @@ export const PortfolioGridItem = ({
         <Heading
           as="h1"
           fontSize="14px"
-          letterSpacing={1}
+          letterSpacing={1} 
           color="#FF70C4"
           textAlign="right"
           mb={2}

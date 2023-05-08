@@ -24,10 +24,10 @@ const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const styles = useColorModeValue(<SunIcon />, <MoonIcon />);
   const color = useColorModeValue("black", "white");
-  const colorText = useColorModeValue("black", "#ffffffd1");
-  const togglerColor = useColorModeValue("purple", "orange");
   const [fix, setFix] = useState(false);
-  const [activeLink, setActiveLink] = useState(null);
+  const [click, setClick] = useState(false);
+
+  const closeMenu = () => setClick(true);
 
   function setFixed() {
     const viewPortHeight = window.innerHeight;
@@ -60,51 +60,53 @@ const Navbar = () => {
         <NextLink href="/">AA.</NextLink>
       </Heading>
       <Spacer />
-      <Link smooth={true} spy={true} duration={450} offset={-100} to="about">
-        <Text
-          display={{ base: "none", sm: "none", md: "inline" }}
-          ml={4}
-          fontSize="sm"
-          color={fix ? "#08080A" : "#fffff"}
-          cursor="pointer"
-          transition="247ms"
-          _hover={{ color: "#FF70C4" }}
-          letterSpacing={1.5}
-          fontWeight="bold"
-        >
-          ABOUT
-        </Text>
-      </Link>
-      <Link smooth={true} duration={450} offset={-100} to="bio">
-        <Text
-          display={{ base: "none", sm: "none", md: "inline" }}
-          ml={4}
-          fontSize="sm"
-          color={fix ? "#08080A" : "#fffff"}
-          cursor="pointer"
-          transition="247ms"
-          _hover={{ color: "#FF70C4" }}
-          letterSpacing={1.5}
-          fontWeight="bold"
-        >
-          BIO
-        </Text>
-      </Link>
-      <Link smooth={true} duration={450} offset={-100} to="contact">
-        <Text
-          display={{ base: "none", sm: "none", md: "inline" }}
-          ml={4}
-          fontSize="sm"
-          color={fix ? "#08080A" : "#fffff"}
-          cursor="pointer"
-          transition="247ms"
-          _hover={{ color: "#FF70C4" }}
-          letterSpacing={1.5}
-          fontWeight="bold"
-        >
-          CONTACT
-        </Text>
-      </Link>
+      <Box>
+        <Link smooth={true} spy={true} duration={450} offset={-100} to="about">
+          <Text
+            display={{ base: "none", sm: "none", md: "inline" }}
+            ml={4}
+            fontSize="sm"
+            color={fix ? "#08080A" : "#fffff"}
+            cursor="pointer"
+            transition="247ms"
+            _hover={{ color: "#FF70C4" }}
+            letterSpacing={1.5}
+            fontWeight="bold"
+          >
+            ABOUT
+          </Text>
+        </Link>
+        <Link smooth={true} duration={450} offset={-100} to="bio">
+          <Text
+            display={{ base: "none", sm: "none", md: "inline" }}
+            ml={4}
+            fontSize="sm"
+            color={fix ? "#08080A" : "#fffff"}
+            cursor="pointer"
+            transition="247ms"
+            _hover={{ color: "#FF70C4" }}
+            letterSpacing={1.5}
+            fontWeight="bold"
+          >
+            BIO
+          </Text>
+        </Link>
+        <Link smooth={true} duration={450} offset={-100} to="contact">
+          <Text
+            display={{ base: "none", sm: "none", md: "inline" }}
+            ml={4}
+            fontSize="sm"
+            color={fix ? "#08080A" : "#fffff"}
+            cursor="pointer"
+            transition="247ms"
+            _hover={{ color: "#FF70C4" }}
+            letterSpacing={1.5}
+            fontWeight="bold"
+          >
+            CONTACT
+          </Text>
+        </Link>
+      </Box>
       <NextLink href="portfolio/portfolio" as="/portfolio">
         <Button
           display={{ base: "none", sm: "none", md: "inline" }}
