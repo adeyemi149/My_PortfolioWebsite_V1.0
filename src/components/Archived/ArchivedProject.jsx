@@ -29,18 +29,24 @@ export const ArchivedProject = () => {
         justify="center"
       >
         <ArchivedProjectItem
-          projectName="Todo App"
-          summary="Built an efficient todo app with add, check, delete, edit functions and motivational quotes API."
-          stacks={["React", "Css", "Typescript", "Quotable API"]}
-          gitHubURL="https://github.com/adeyemi149/React-todo-app"
-          URL="https://web-app-todo.netlify.app/"
-        />
-        <ArchivedProjectItem
           projectName="Password Generator"
           summary="A password generator that helps me generate unique random passwords. To use with Signing up or registering to any application/sites."
           stacks={["Html", "Css", "Javascript"]}
           gitHubURL="https://github.com/adeyemi149/Password__Generator"
           URL="https://password-generator-adeyemi149.vercel.app/"
+        />
+        <ArchivedProjectItem
+          projectName="NextJS Portfolio Site"
+          summary="This is my portfoli site built with NextJS and deployed on Vercel"
+          stacks={["NextJs", "ChakraUI", "Vercel"]}
+          gitHubURL="https://github.com/adeyemi149/My_PortfolioWebsite_V1.0"
+        />
+        <ArchivedProjectItem
+          projectName="Todo App"
+          summary="Built an efficient todo app with add, check, delete, edit functions and motivational quotes API."
+          stacks={["React", "Css", "Typescript", "Quotable API"]}
+          gitHubURL="https://github.com/adeyemi149/React-todo-app"
+          URL="https://web-app-todo.netlify.app/"
         />
       </Wrap>
     </Box>
@@ -77,26 +83,34 @@ export const ArchivedProjectItem = ({
       >
         <BsFolder size={30} color="#FF70C4" />
         <Box display="flex" gap={2}>
-          <NextLink href={URL} target="_blank" rel="noreferrer">
-            <motion.button
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              whileHover="hover"
-              whileTap="tap"
-              variants={buttonVariant}
-            >
-              <FiExternalLink />
-            </motion.button>
-          </NextLink>
-          <NextLink href={gitHubURL} target="_blank" rel="noreferrer">
-            <motion.button
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              whileHover="hover"
-              whileTap="tap"
-              variants={buttonVariant}
-            >
-              <FiGithub />
-            </motion.button>
-          </NextLink>
+          {URL ? (
+            <NextLink href={URL} target="_blank" rel="noreferrer">
+              <motion.button
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                whileHover="hover"
+                whileTap="tap"
+                variants={buttonVariant}
+              >
+                <FiExternalLink />
+              </motion.button>
+            </NextLink>
+          ) : (
+            ""
+          )}
+          {gitHubURL ? (
+            <NextLink href={gitHubURL} target="_blank" rel="noreferrer">
+              <motion.button
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                whileHover="hover"
+                whileTap="tap"
+                variants={buttonVariant}
+              >
+                {gitHubURL ? <FiGithub /> : ""}
+              </motion.button>
+            </NextLink>
+          ) : (
+            ""
+          )}
         </Box>
       </Flex>
       <Heading

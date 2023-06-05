@@ -4,7 +4,12 @@ import { Box, Heading } from "@chakra-ui/react";
 
 const Bio = () => {
   return (
-    <Box name="bio" maxW={{ sm: "550px", md: "700px", lg: "1140px" }} p={3} mx="auto">
+    <Box
+      name="bio"
+      maxW={{ sm: "550px", md: "700px", lg: "1140px" }}
+      p={3}
+      mx="auto"
+    >
       <Heading
         size={{ base: "xl", sm: "xl", md: "lg" }}
         textAlign={{ sm: "left", md: "center", lg: "center" }}

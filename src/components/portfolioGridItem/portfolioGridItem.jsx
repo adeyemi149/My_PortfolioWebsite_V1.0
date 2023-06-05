@@ -29,10 +29,10 @@ export const PortfolioGridItem = ({
   about,
 }) => {
   const router = useRouter();
-  const handleClick = (e) => {
-    e.preventDefault();
-    router.push(toPage);
-  };
+  // const handleClick = (e) => {
+  //   e.preventDefault();
+  //   router.push(toPage);
+  // };
   const img = useColorModeValue(
     "assests/images/webLightMode.png",
     "assests/images/web.png"
@@ -70,7 +70,7 @@ export const PortfolioGridItem = ({
         <Heading
           as="h1"
           fontSize="14px"
-          letterSpacing={1} 
+          letterSpacing={1}
           color="#FF70C4"
           textAlign="right"
           mb={2}

@@ -8,20 +8,6 @@ import {
   SliderThumb,
   SliderMark,
 } from "@chakra-ui/react";
-import {
-  HtmlLogo,
-  CssLogo,
-  JsLogo,
-  TsLogo,
-  CsharpLogo,
-  NextLogo,
-  ReactLogo,
-  SqlServerLogo,
-  FirebaseLogo,
-  VscodeLogo,
-  VsStudioIDE,
-  GithubLogo,
-} from "../svgs/SvgIcons";
 
 const Skill = ({ icon, value, props }) => {
   const [sliderValue, setSliderValue] = useState(value);

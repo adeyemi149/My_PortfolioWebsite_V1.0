@@ -12,6 +12,7 @@ import Typed from "react-typed";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import NextLink from "next/link";
 import { Link } from "react-scroll";
+import Ztext from "react-ztext";
 
 const Hero = () => {
   const textLines = [
@@ -41,6 +42,7 @@ const Hero = () => {
         >
           Hello, my name is
         </Heading>
+
         <Heading
           as="h2"
           textAlign={{ base: "center", sm: "left", md: "left" }}
@@ -51,6 +53,7 @@ const Hero = () => {
         >
           Alimi Adeyemi.
         </Heading>
+
         <Heading
           as="h3"
           textAlign={{ base: "center", sm: "left", md: "left" }}

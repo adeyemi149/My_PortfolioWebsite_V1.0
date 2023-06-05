@@ -7,7 +7,7 @@ import { LinkIcon } from "@chakra-ui/icons";
 import WorkGridItem from "@/src/components/workGridItem/WorkGridItem";
 import { VmwareLandingPage } from "../../public/images";
 
-const Vmware = () => {
+const CloudHive = () => {
   return (
     <Layout>
       <Box
@@ -16,7 +16,7 @@ const Vmware = () => {
         mx="auto"
         mt={20}
       >
-        <Title>Vmware</Title>
+        <Title>CloudHive</Title>
         <Text mt={5} textIndent={15}>
           A Landing Page for CloudHosting Website
         </Text>
@@ -40,7 +40,7 @@ const Vmware = () => {
         <SimpleGrid mt={4} columns={[1, 1, 2]} gap={6}>
           <WorkGridItem
             thumbnail={VmwareLandingPage.default.src}
-            title="Vmware"
+            title="CloudHive"
           />
         </SimpleGrid>
       </Box>
@@ -48,4 +48,4 @@ const Vmware = () => {
   );
 };
 
-export default Vmware;
+export default CloudHive;
