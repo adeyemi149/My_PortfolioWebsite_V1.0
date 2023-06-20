@@ -10,14 +10,18 @@ import {
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { motion } from "framer-motion";
-import { FiExternalLink, FiMoreVertical, FiGithub } from "react-icons/fi";
+import { FiExternalLink, FiGithub } from "react-icons/fi";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { buttonVariant } from "../../Variant";
 
 export const EmailProject = () => {
   return (
-    <SimpleGrid maxW={{ base: "650px", sm: "650px", lg: "750px" }} mx="auto">
-      <Wrap spacing="30px">
+    <SimpleGrid
+      maxW={{ base: "650px", sm: "650px", lg: "750px" }}
+      mx="auto"
+      justifyContent="center"
+    >
+      <Wrap spacing="30px" display="flex" justify="center">
         <EmailGridItem
           imgUrl="assests/images/GoDaddy_Email.png"
           EmailName="GoDaddy Email"
