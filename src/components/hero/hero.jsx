@@ -13,6 +13,7 @@ import { ChevronDownIcon } from "@chakra-ui/icons";
 import NextLink from "next/link";
 import { Link } from "react-scroll";
 import Ztext from "react-ztext";
+import { BsMouse3 } from "react-icons/bs";
 
 const Hero = () => {
   const textLines = [
@@ -117,7 +118,7 @@ const Hero = () => {
         >
           SCROLL DOWN
         </Text>
-        <ChevronDownIcon fontSize="2xl" color="#FF70C4" />
+        <BsMouse3 fontSize="2xl" color="#FF70C4" />
       </Flex>
     </>
   );

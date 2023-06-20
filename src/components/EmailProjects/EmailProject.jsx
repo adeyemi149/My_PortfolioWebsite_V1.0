@@ -24,6 +24,15 @@ export const EmailProject = () => {
           EmailType="Promotional HTML Email"
           github="https://github.com/adeyemi149/GoDaddyEmail"
           url="https://godaddy-email.vercel.app/"
+          detailsPage="/emailDetails/goDaddy"
+        />
+        <EmailGridItem
+          imgUrl="assests/images/dribble_Email.png"
+          EmailName="Dribble Email"
+          EmailType="NewsLetter HTML Email"
+          github="https://github.com/adeyemi149/DribbleEmail"
+          url="https://dribble-email.vercel.app/"
+          detailsPage="/emailDetails/dribbleEmail"
         />
       </Wrap>
     </SimpleGrid>
@@ -36,6 +45,7 @@ export const EmailGridItem = ({
   EmailType,
   url,
   github,
+  detailsPage,
 }) => {
   const [hovering, setHovering] = useState(false);
   return (
@@ -47,7 +57,7 @@ export const EmailGridItem = ({
       width="230px"
       position="relative"
     >
-      <NextLink href="/emailDetails/goDaddy">
+      <NextLink href={detailsPage}>
         <Box
           as={motion.div}
           whileHover={{ opacity: 0.5 }}
