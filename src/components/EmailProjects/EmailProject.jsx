@@ -38,6 +38,14 @@ export const EmailProject = () => {
           url="https://dribble-email.vercel.app/"
           detailsPage="/emailDetails/dribbleEmail"
         />
+        <EmailGridItem
+          imgUrl="assests/images/Statista_Email.png"
+          EmailName="Statista Email"
+          EmailType="NewsLetter HTML Email"
+          github="https://github.com/adeyemi149/DribbleEmail"
+          url="https://statista-lemon.vercel.app/"
+          detailsPage="/emailDetails/statista"
+        />
       </Wrap>
     </SimpleGrid>
   );
