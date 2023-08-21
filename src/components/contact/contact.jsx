@@ -9,6 +9,7 @@ import {
   Flex,
   Grid,
   Text,
+  Container,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { useForm, ValidationError } from "@formspree/react";
@@ -36,7 +37,7 @@ const Contact = () => {
   };
 
   return (
-    <>
+    <Container maxW="1240px">
       <Box
         maxW={{ sm: "550px", md: "700px", lg: "1140px" }}
         p={3}
@@ -112,11 +113,11 @@ const Contact = () => {
                 as={motion.button}
                 whileTap={{ scale: 0.9 }}
                 _hover={{ bg: "#54ccc6" }}
-                fontSize="14px"
+                fontSize="18px"
                 bg={bg}
                 type="submit"
               >
-                Talk to me
+                Shoot &rarr;
               </Button>
             </Stack>
           </form>
@@ -190,7 +191,7 @@ const Contact = () => {
           </Link>
         </Flex>
       </Box>
-    </>
+    </Container>
   );
 };
 

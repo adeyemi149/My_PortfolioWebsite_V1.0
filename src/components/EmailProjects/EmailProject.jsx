@@ -13,41 +13,44 @@ import { motion } from "framer-motion";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { buttonVariant } from "../../Variant";
+import Layout from "../Layout/layout";
 
 export const EmailProject = () => {
   return (
-    <SimpleGrid
-      maxW={{ base: "650px", sm: "650px", lg: "750px" }}
-      mx="auto"
-      justifyContent="center"
-    >
-      <Wrap spacing="30px" display="flex" justify="center">
-        <EmailGridItem
-          imgUrl="assests/images/GoDaddy_Email.png"
-          EmailName="GoDaddy Email"
-          EmailType="Promotional HTML Email"
-          github="https://github.com/adeyemi149/GoDaddyEmail"
-          url="https://godaddy-email.vercel.app/"
-          detailsPage="/emailDetails/goDaddy"
-        />
-        <EmailGridItem
-          imgUrl="assests/images/dribble_Email.png"
-          EmailName="Dribble Email"
-          EmailType="NewsLetter HTML Email"
-          github="https://github.com/adeyemi149/DribbleEmail"
-          url="https://dribble-email.vercel.app/"
-          detailsPage="/emailDetails/dribbleEmail"
-        />
-        <EmailGridItem
-          imgUrl="assests/images/Statista_Email.png"
-          EmailName="Statista Email"
-          EmailType="NewsLetter HTML Email"
-          github="https://github.com/adeyemi149/DribbleEmail"
-          url="https://statista-lemon.vercel.app/"
-          detailsPage="/emailDetails/statista"
-        />
-      </Wrap>
-    </SimpleGrid>
+    <Layout>
+      <SimpleGrid
+        maxW={{ base: "650px", sm: "650px", lg: "750px" }}
+        mx="auto"
+        justifyContent="center"
+      >
+        <Wrap spacing="30px" display="flex" justify="center">
+          <EmailGridItem
+            imgUrl="assests/images/GoDaddy_Email.png"
+            EmailName="GoDaddy Email"
+            EmailType="Promotional HTML Email"
+            github="https://github.com/adeyemi149/GoDaddyEmail"
+            url="https://godaddy-email.vercel.app/"
+            detailsPage="/emailDetails/goDaddy"
+          />
+          <EmailGridItem
+            imgUrl="assests/images/dribble_Email.png"
+            EmailName="Dribble Email"
+            EmailType="NewsLetter HTML Email"
+            github="https://github.com/adeyemi149/DribbleEmail"
+            url="https://dribble-email.vercel.app/"
+            detailsPage="/emailDetails/dribbleEmail"
+          />
+          <EmailGridItem
+            imgUrl="assests/images/Statista_Email.png"
+            EmailName="Statista Email"
+            EmailType="NewsLetter HTML Email"
+            github="https://github.com/adeyemi149/DribbleEmail"
+            url="https://statista-lemon.vercel.app/"
+            detailsPage="/emailDetails/statista"
+          />
+        </Wrap>
+      </SimpleGrid>
+    </Layout>
   );
 };
 

@@ -12,15 +12,7 @@ export const ArchivedProject = () => {
       <Heading as="h2" textAlign="center">
         Other Projects
       </Heading>
-      <Heading
-        as="h4"
-        fontSize="16px"
-        textAlign="center"
-        mb={4}
-        color="#FF70C4"
-      >
-        view the archive
-      </Heading>
+
       <Wrap
         spacing="30px"
         maxW={{ base: "650px", sm: "650px", lg: "750px" }}
@@ -29,24 +21,17 @@ export const ArchivedProject = () => {
         justify="center"
       >
         <ArchivedProjectItem
+          projectName="Portfolio Website"
+          summary="This is my portfoli site built with NextJS and deployed on Vercel"
+          stacks={["Figma", "NextJs", "ChakraUI", "Vercel"]}
+          gitHubURL="https://github.com/adeyemi149/My_PortfolioWebsite_V1.0"
+        />
+        <ArchivedProjectItem
           projectName="Password Generator"
           summary="A password generator that helps me generate unique random passwords. To use with Signing up or registering to any application/sites."
           stacks={["Html", "Css", "Javascript"]}
           gitHubURL="https://github.com/adeyemi149/Password__Generator"
           URL="https://password-generator-adeyemi149.vercel.app/"
-        />
-        <ArchivedProjectItem
-          projectName="NextJS Portfolio Site"
-          summary="This is my portfoli site built with NextJS and deployed on Vercel"
-          stacks={["NextJs", "ChakraUI", "Vercel"]}
-          gitHubURL="https://github.com/adeyemi149/My_PortfolioWebsite_V1.0"
-        />
-        <ArchivedProjectItem
-          projectName="Todo App"
-          summary="Built an efficient todo app with add, check, delete, edit functions and motivational quotes API."
-          stacks={["React", "Css", "Typescript", "Quotable API"]}
-          gitHubURL="https://github.com/adeyemi149/React-todo-app"
-          URL="https://web-app-todo.netlify.app/"
         />
       </Wrap>
     </Box>

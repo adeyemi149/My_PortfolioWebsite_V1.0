@@ -9,10 +9,8 @@ import {
   Button,
 } from "@chakra-ui/react";
 import Typed from "react-typed";
-import { ChevronDownIcon } from "@chakra-ui/icons";
-import NextLink from "next/link";
+import { Container } from "@chakra-ui/react";
 import { Link } from "react-scroll";
-import Ztext from "react-ztext";
 import { BsMouse3 } from "react-icons/bs";
 
 const Hero = () => {
@@ -23,22 +21,22 @@ const Hero = () => {
   ];
 
   return (
-    <>
+    <Container maxW="1240px">
       <Box
         name="top"
         maxW={{ sm: "550px", md: "700px", lg: "1140px" }}
-        mx={{ base: "auto", lg: "80px" }}
-        mb={2}
         p={3}
+        mx="auto"
         textAlign={{ base: "center", sm: "left", lg: "left" }}
+        mt={{ base: 8 }}
       >
         <Heading
           as="h1"
-          textAlign={{ base: "center", sm: "left", lg: "left" }}
           size={{ base: "sm" }}
-          fontSize={{ base: "14px" }}
+          fontSize={{ base: "16px" }}
           color="#FF70C4"
           mb={4}
+          sx={{ wordSpacing: "5px" }}
           className="bounce-in-top"
         >
           Hello, my name is
@@ -46,7 +44,6 @@ const Hero = () => {
 
         <Heading
           as="h2"
-          textAlign={{ base: "center", sm: "left", md: "left" }}
           letterSpacing={3}
           fontFamily="Alegreya Sans"
           fontSize={{ base: "32px", lg: "70px" }}
@@ -57,7 +54,6 @@ const Hero = () => {
 
         <Heading
           as="h3"
-          textAlign={{ base: "center", sm: "left", md: "left" }}
           letterSpacing={3}
           color="#8A8B8D"
           fontSize={{ base: "32px", lg: "70px" }}
@@ -70,8 +66,7 @@ const Hero = () => {
           mb={4}
           fontWeight="bold"
           fontSize={{ base: "16px" }}
-          textAlign={{ base: "center", sm: "left", md: "left" }}
-          w={{ sm: "450px" }}
+          w={{ sm: "450px", lg: "550px" }}
           className="fade-in-bck"
         >
           I&apos;m a software engineer that focuses on developing
@@ -105,9 +100,10 @@ const Hero = () => {
         </Flex>
       </Box>
       <Flex
+        maxW={{ sm: "550px", md: "700px", lg: "1140px" }}
         alignItems="center"
-        textAlign={{ base: "center", sm: "center", md: "left" }}
-        pl={3}
+        p={3}
+        mx="auto"
         mt={{ base: 0, md: "35" }}
       >
         <Text
@@ -120,7 +116,7 @@ const Hero = () => {
         </Text>
         <BsMouse3 fontSize="2xl" color="#FF70C4" />
       </Flex>
-    </>
+    </Container>
   );
 };
 

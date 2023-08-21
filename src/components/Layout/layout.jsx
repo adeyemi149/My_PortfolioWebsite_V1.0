@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Container } from "@chakra-ui/react";
 
 const Layout = ({ children }) => {
   const variant = {

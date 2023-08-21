@@ -9,6 +9,7 @@ import {
   Grid,
   Wrap,
   WrapItem,
+  Container,
 } from "@chakra-ui/react";
 import React from "react";
 import NextLink from "next/link";
@@ -42,7 +43,7 @@ const About = () => {
   ];
   const bg = useColorModeValue("#67c2c0", "#22948e");
   return (
-    <>
+    <Container maxW="1240px">
       <Box
         name="about"
         maxW={{ sm: "550px", md: "700px", lg: "1140px" }}
@@ -118,7 +119,7 @@ const About = () => {
           </NextLink>
         </Box>
       </Box>
-    </>
+    </Container>
   );
 };
 

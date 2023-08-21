@@ -41,9 +41,7 @@ const Portfolio = () => {
           />
           <TabPanels>
             <TabPanel>
-              <Layout>
-                <WebProject />
-              </Layout>
+              <WebProject />
             </TabPanel>
             <TabPanel>
               <EmailProject />
