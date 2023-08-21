@@ -76,7 +76,7 @@ export const ArchivedProjectItem = ({
                 whileTap="tap"
                 variants={buttonVariant}
               >
-                <FiExternalLink />
+                <FiExternalLink style={{ width: "24px", height: "24px" }} />
               </motion.button>
             </NextLink>
           ) : (
@@ -90,7 +90,11 @@ export const ArchivedProjectItem = ({
                 whileTap="tap"
                 variants={buttonVariant}
               >
-                {gitHubURL ? <FiGithub /> : ""}
+                {gitHubURL ? (
+                  <FiGithub style={{ width: "24px", height: "24px" }} />
+                ) : (
+                  ""
+                )}
               </motion.button>
             </NextLink>
           ) : (

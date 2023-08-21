@@ -71,21 +71,21 @@ const Navbar = () => {
           <NavLink LinkText="ABOUT" fix={fix} to="about" />
           <NavLink LinkText="BIO" fix={fix} to="bio" />
           <NavLink LinkText="CONTACT" fix={fix} to="contact" />
-          <NextLink href="#" as="/Resume">
-            <Text
-              display={{ base: "none", sm: "none", md: "inline" }}
-              ml={4}
-              fontSize="sm"
-              color={fix ? "#08080A" : "#fffff"}
-              cursor="pointer"
-              transition="247ms"
-              _hover={{ color: "#FF70C4" }}
-              letterSpacing={1.5}
-              fontWeight="bold"
-            >
-              MY RESUME
-            </Text>
-          </NextLink>
+          <Text
+            display={{ base: "none", sm: "none", md: "inline" }}
+            ml={4}
+            fontSize="sm"
+            color={fix ? "#08080A" : "#fffff"}
+            cursor="pointer"
+            transition="247ms"
+            _hover={{ color: "#FF70C4" }}
+            letterSpacing={1.5}
+            fontWeight="bold"
+          >
+            <a href="/Resume.pdf" target="_blank">
+              RESUME
+            </a>
+          </Text>
           <NextLink href="portfolio/portfolio" as="/portfolio">
             <Button
               display={{ base: "none", sm: "none", md: "inline" }}

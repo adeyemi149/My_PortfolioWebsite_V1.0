@@ -113,7 +113,7 @@ export const PortfolioGridItem = ({
               whileTap="tap"
               variants={buttonVariant}
             >
-              <FiExternalLink />
+              <FiExternalLink style={{ width: "24px", height: "24px" }} />
             </motion.button>
           </NextLink>
           <NextLink href={github} target="_blank" rel="noreferrer">
@@ -123,7 +123,7 @@ export const PortfolioGridItem = ({
               whileTap="tap"
               variants={buttonVariant}
             >
-              <FiGithub />
+              <FiGithub style={{ width: "24px", height: "24px" }} />
             </motion.button>
           </NextLink>
           <NextLink href={toPage} rel="noreferrer">
@@ -132,7 +132,7 @@ export const PortfolioGridItem = ({
               whileTap="tap"
               variants={buttonVariant}
             >
-              <FiMoreVertical />
+              <FiMoreVertical style={{ width: "24px", height: "24px" }} />
             </motion.button>
           </NextLink>
         </Flex>

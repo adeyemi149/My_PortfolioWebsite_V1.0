@@ -112,7 +112,7 @@ export const EmailGridItem = ({
             whileTap="tap"
             variants={buttonVariant}
           >
-            <FiExternalLink />
+            <FiExternalLink style={{ width: "24px", height: "24px" }} />
           </motion.button>
         </NextLink>
         <NextLink href={github} target="_blank" rel="noreferrer">
@@ -122,7 +122,7 @@ export const EmailGridItem = ({
             whileTap="tap"
             variants={buttonVariant}
           >
-            <FiGithub />
+            <FiGithub style={{ width: "24px", height: "24px" }} />
           </motion.button>
         </NextLink>
       </Flex>
