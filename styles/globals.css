@@ -5,8 +5,8 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 0.8vw;
-  height: 0.5em;
+  width: 0.5vw;
+  height: 0.4em;
 }
 
 ::-webkit-scrollbar-track {

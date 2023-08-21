@@ -59,7 +59,7 @@ const Hero = () => {
           fontSize={{ base: "32px", lg: "70px" }}
           fontFamily="Alegreya Sans"
         >
-          I <Typed strings={textLines} backSpeed={60} typeSpeed={100} />
+          I craft innovative web experience.
         </Heading>
         <Text
           color="#B9BABB"
