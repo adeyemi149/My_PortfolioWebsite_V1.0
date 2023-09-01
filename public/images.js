@@ -25,3 +25,5 @@ export const disneySearchPage = require("../public/assests/images/disney_SearchP
 export const disneyTrailer = require("../public/assests/images/disney_Trailer.png");
 
 export const disneyWatchList = require("../public/assests/images/disney_WatchList.png");
+
+export const comingSoonURL = require("../public/assests/images/comingSoon_MacView.png")

@@ -33,6 +33,13 @@ export const ArchivedProject = () => {
           gitHubURL="https://github.com/adeyemi149/Password__Generator"
           URL="https://password-generator-adeyemi149.vercel.app/"
         />
+        <ArchivedProjectItem
+          projectName="Tesla Clone"
+          summary="A Website modelled after Tesla's design and branding that utilizes latest technologies such as Redux state management and Styled Components for CSS styling"
+          stacks={["React", "Typescript", "Redux", "Styled component"]}
+          gitHubURL="https://github.com/adeyemi149/tesla-clone-website"
+          URL="https://clone-tesla-site.netlify.app/"
+        />
       </Wrap>
     </Box>
   );

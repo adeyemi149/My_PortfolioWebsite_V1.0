@@ -6,9 +6,12 @@ import {
   TeslaCloneURL,
   LinkedCloneURL,
   disneyHomePage,
+  comingSoon,
+  comingSoonURL,
 } from "@/public/images";
 import { ArchivedProject } from "../Archived/ArchivedProject";
 import Layout from "../Layout/layout";
+import { ComingSoonProject } from "../ComingSoon/comingSoonProject";
 
 const WebProject = () => {
   return (
@@ -46,15 +49,15 @@ const WebProject = () => {
             skills={["React", "Firebase", "Redux", "Styled component"]}
             about="Built a LinkedIn-inspired app that allows users to make post using a postmodal and add photos/videos that are stored in firebase database. It also incorporates firebase authenticaton for secure login or logout"
           />
-          <PortfolioGridItem
-            id="Tesla Clone"
-            title="Tesla Clone"
-            thumbnail={TeslaCloneURL.default.src}
-            toPage="/webDetails/tesla"
-            url="https://clone-tesla-site.netlify.app/"
-            github="https://github.com/adeyemi149/tesla-clone-website"
-            skills={["React", "Typescript", "Redux", "Styled component"]}
-            about="I created a website modelled after Tesla's design and branding that utilizes latest technologies such as Redux for efficient state management and Styled Components for dynamic CSS styling"
+          <ComingSoonProject
+            id="Workbench"
+            title="Workbench"
+            skills={["Next.Js", "MaterialUI", "Asp.net Core Web API", "SQL"]}
+            about=""
+            url=""
+            github=""
+            thumbnail={comingSoonURL.default.src}
+            toPage=""
           />
           <ArchivedProject />
         </SimpleGrid>
