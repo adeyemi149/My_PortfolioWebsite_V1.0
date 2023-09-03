@@ -88,16 +88,16 @@ const NavSidebar = () => {
                 Portfolio
               </PopoverBody>
             </NextLink>
-            <NextLink href="#" as="/Resume">
-              <PopoverBody
-                _hover={{
-                  color: "#FF70C4",
-                  bg: "rgba(0, 0, 0, 0.15)",
-                }}
-              >
-                My Resume
-              </PopoverBody>
-            </NextLink>
+            <PopoverBody
+              _hover={{
+                color: "#FF70C4",
+                bg: "rgba(0, 0, 0, 0.15)",
+              }}
+            >
+              <a href="/Resume.pdf" target="_blank">
+                Resume
+              </a>
+            </PopoverBody>
           </PopoverContent>
         </Popover>
       </Center>
